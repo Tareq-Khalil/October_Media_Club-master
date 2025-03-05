@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OMC</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/reset.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/nav.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  </head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+  <style>
+    body {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/pixelated1.png'), auto !important;}
+    a, button, #mascot, #image-carousel, #sticker-hero, #nav, .merch-card, #community-image, li  {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/pixelated2.png') 23 0, auto !important;}
+    </style>
+  <body data-scroll-container>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+    <section id="welcome-section" class="container">
+      <div id="drawing-canvas"></div>
+      <h2 id="welcome">Welcome to</h2>
+      <div id="title"><span style="font-family: terminal-grotesque-open, sans-serif">Oct</span>ober <span style="font-family: terminal-grotesque-open">M</span>edia <span style="font-family: terminal-grotesque-open">C</span>lub</div>
+      <p id="intro">October Media Club is a student run organization at STEM High School for Boys - 6th of October focused on raising students and holding events for those interested in Media.</p>
+      <p id="draw-hint">pssst... </br> try clicking and dragging to draw ;)</p>
+      </section>
+
+    <section id="event-section" class="container">
+      <p id="join">JOIN US <br> You are Welcome anytime</p>
+        <div id="svgContainer">
+        <svg id="svg1" width="0" height="0" >
+          <defs>
+              <!-- arrowhead marker definition -->
+              <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="6" markerHeight="6"
+                  orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" style="stroke: none; fill: #fff;"/>
+              </marker>
+            </defs>  
+          <path
+              id="path1"
+              d="M0 0"             
+              stroke-width="3px"
+              marker-end="url(#arrow)"
+              style="stroke: #fff; fill:none; "/>
+              
+          <circle cx="0" cy="0" r="5" fill="#fff">
+            <animateMotion dur="5s" repeatCount="indefinite">
+              <mpath xlink:href="#path1"></mpath>
+            </animateMotion>   
+          </svg>
+    </div>
+
+    <div class="wilson">
+      <div id="mascot-face">:)</div>
+    <img id="mascot" class="rotate" src="media/wilson.svg">
+    <img id="mascot-bg" src="media/wilson-bg.svg">
+  </div>
+
+      <div id="event-wrapper">
+        <p id="event-time"></p>
+        <p id="event-date">Whatsapp contact no.<br><a href="tel:+201093561941">+20 109 356 1941</a></p>
+        <h2 id="event-title">STEM High School for Boys - 6th of October</h2>
+        <p id="event-bio">A pioneering school that empowers students through hands-on STEM learning, research, and real-world problem-solving, shaping the next generation of innovators.</p>
+        <a href=""><button id="event-button">More Events →</button></a>
+      </div>
+  </section>
+
+  <section id="who-section" class="container">
+
+    <h1 id="who" class="mbs">Who<br>we are</h1 >
+    <p id="who-bio">We are writers, designers, developers, artists, and creators at STEM High School for Boys - 6th of October. We strongly believe in including all in our pursuit for a better person and community.</p>
+
+  <div id="image-carousel" class="mbs">
+    <div id="slider-container">
+      <div class="slider">
+        <span><div class="img-container"><img src="/media/schoolo.jpg"></img></div></span>
+        <span><div class="img-container"><img src="/media/labo.png"></img></div></span>
+        <span><div class="img-container"><img src="/media/wesho.png"></img></div></span>
+        <span><div class="img-container"><img src="/media/banner-8.jpeg"></img></div></span>
+        <span><div class="img-container"><img src="/media/banner-5.jpg"></img></div></span>
+        <span><div class="img-container"><img src="/media/banner-6.jpg"></img></div></span>
+        <span><div class="img-container"><img src="/media/banner-1.jpg"></img></div></span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+  
+ 
+  
+  <section class="container mbl" id="sticker-section">
+    <!-- <div id="stickerCanvas"></div> -->
+    <!-- <div id="matterCanvas"></div> -->
+    <!-- <div id="matterContainer">
+      
+    </div> -->
+     <div id="sticker-hero"></div>
+     <div id="callout-container">
+      <h2 id="callout1">we focus on</h2>
+      <div class="mbs" id="bigtext">building community</div>
+      <h2 id="callout2">centered around the future of</h2> 
+      <div class="mbs" id="bigtext2">design &#38; interaction</div>
+    </div>
+    
+
+    <div id="grid-col">
+      <div class="col-segment" id="segment1"></div>
+      <div class="col-segment" id="segment2"></div>
+      <div class="col-segment" id="segment3"></div>
+      <div class="col-segment" id="segment4"></div>
+      <div class="col-segment" id="segment5"></div>
+      <div class="col-segment" id="segment6"></div>
+      <div class="col-segment" id="segment7"></div>
+      <div class="col-segment" id="segment8"></div>
+      <div class="col-segment" id="segment9"></div>
+      <div class="col-segment" id="segment10"></div>
+      <div class="col-segment" id="segment11"></div>
+      <div class="col-segment" id="segment12"></div>
+    </div>
+
+    <div id="grid-rows" >
+      <div class="row-segment" id="row1" ></div>
+      <div class="row-segment" id="row2"></div>
+      <div class="row-segment" id="row3"></div>
+      <div class="row-segment" id="row4"></div>
+      <div class="row-segment" id="row5"></div>
+      <div class="row-segment" id="row6"></div>
+      <div class="row-segment" id="row7"></div>
+      <div class="row-segment" id="row8"></div>
+      <div class="row-segment" id="row9"></div>
+      <div class="row-segment" id="row10"></div>
+    </div>    
+  </section>
+
+  
+  <section id="mentor-section" class="container mbm">
+    
+    <!-- <img id="mentor-img" src="media/mentorship.png"> -->
+    <!-- <div class="mentor-container"> -->
+      <img src="media/mentor-shape.png" class="mentor-rotate" id="mentor-shape">
+      <img src="media/mentor-arrow.png" id="mentor-arrow">
+      <img src="media/mentee-shape.png" class="mentee-rotate" id="mentee-shape">
+      <img src="media/mentee-arrow.png" id="mentee-arrow">
+    <div id="mentor-bg-scene" class="mbs">
+        <img src="media/mentor-bg-1.png" data-depth="0.1" id="mentor-bg-1">
+        <img src="media/mentor-bg-2.png" data-depth="0.2" id="mentor-bg-2">
+    </div>
+    <script>
+        var scene = document.getElementById('mentor-bg-scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+  <!-- </div> -->
+    <h1 id="mentor" class="mbs">Mentorship</h1>
+    <p id="mentor-desc">One of the main goals of New Media Club is to provide opportunities for mentorship, which strengthens our community and reinforces our bonds with our large and growing network of alumni. We create mentorship groups yearly so that our students can get to know those from different backgrounds and year levels.</p>
+    <p id="mentor-desc2">We also hold mentorship events occasionally and encourage groups to meet up and get to know their peers outside of the lab. Our goal is to have students build connections stronger than just classmates and teach the next generation of students our tips and tricks.</p> 
+    <a id="mentor-link" href="/mentorship.html">More About Our Mentorship Program →</a>
+    
+  </section>
+
+
+<section id="community-section" class="container mbm">
+  <!-- <h1 id="community" class="mbs">Community Highlight</h1> -->
+  <div id="community-image"></div>
+  <div id="community-desc">
+    <h4 id="community-label" class="mbs">ARTICLE</h3>
+    <h1 id="community-title" class="mbs">Creating a New New Media Club</h3>
+    <p class="mbs">In case you couldn't tell, we rebranded! Check out  deep dive into the personality and specifics of our new look and feel.</p>
+    <a href="articles/nmcrebrand.html"><button id="read-more-button">Read More →</button></a>
+  </div>
+  
+</section>
+
+
+<section id="merch-section" class="container mbm">
+  <!-- <img src="media/tshirt.png" id="merc-image"> -->
+<div id="merch-wrapper" class="mbm">
+    <h1 id="merch-label">Merch</h1>
+    <p id="merch-desc">Support our club through our web store. We offer stickers, t-shirts and other NMC swag for you to rep in the lab or the real world. Thank you!</p>
+</div>
+
+<a href="" target="_blank" rel="noopener noreferrer" id="card-container" class="mbm"> 
+    <span class="merch-card" id="merch-card-1">
+        <h1>01</h1>
+        <div class="card-bg"></div>
+        <h2>LinkedIn →</h2>
+        
+    </span>
+    <span class="merch-card" id="merch-card-2">
+      <h1>02</h1>
+      <div class="card-bg"></div>
+      <h2>Youtube →</h2>
+      
+    </span>
+    <span class="merch-card" id="merch-card-3">
+      <h1>03</h1>
+      <div class="card-bg"></div>
+      <h2>Instagram →</h2>
+    </a>
+    </span>
+  </a>
+  <a href="" target="_blank" rel="noopener noreferrer" id="merch-button"><button >Frame the <strong>Moment</strong> →</button></a>
+</section>
+
+<!-- Inject footer code -->
+<div id="footer-placeholder"></div>
+
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js" type="text/javascript"></script>
+<!-- <script src="./matter/matter-js-0.14.2/build/matter.js" type="text/javascript"></script> -->
+    <script src="/src/decomp.js" type="text/javascript"></script>
+    <script src="/src/decomp.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.15.0/matter.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.15.0/matter.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="/src/scrollbooster.js"></script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/box.js" type="text/javascript"></script>
+    <script src="/src/star.js" type="text/javascript"></script>
+    <!-- <script src="/src/clickdrag.js" type="text/javascript"></script> -->
+    <script src="/src/sticker.js" defer type="text/javascript"></script>
+    <script src="/src/Line.js" defer type="text/javascript"></script>
+    <script src="/src/drawing.js" defer type="text/javascript"></script>
+    <script src="/src/svgDraw.js" type="text/javascript"></script>
+    <!-- <script src="/src/nav.js" type="text/javascript"></script> -->
+    <!-- <script src="/src/locomotive-scroll.min.js"></script> -->
+
+
+
+</body>
+</html>

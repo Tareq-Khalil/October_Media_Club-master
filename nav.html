@@ -1,0 +1,80 @@
+<div class="nav">
+    <a class="nav__logo" href="./index.html"><img src="/img/NMClogo.svg"></a>
+    <a class="burger_menu" id="toggle">
+      <!-- <div class="burger_menu-top"></div>
+      <div class="burger_menu-bottom"></div> -->
+      <img src="media/close-menu.svg" class="burger_menu-icon">
+      <!-- <img src="media/close-menu.svg" class="close_menu-icon"> -->
+  </a>
+  <script>
+        $('#toggle').click(function() {
+          $(this).toggleClass('active');
+          $(".hero-text span").toggle();
+          $('#overlay').toggleClass('open');
+          $('body').toggleClass('noscroll')
+    });
+  </script>
+    <div class="overlay" id="overlay">
+      <div class="overlay-grid">
+    <ul class="nav__linkholder">
+      <li class="nav__linkholder__link"><a class="nav__link" href="" target="_blank" rel="noopener noreferrer">Join Us</a></li>
+      <li class="nav__linkholder__link"><a class="nav__link" href="events.html" target="_blank" rel="noopener noreferrer">Events</a></li>
+      <!-- <li class="nav__linkholder__link"><a class="nav__link" href="">Community</a></li> -->
+      <li class="nav__linkholder__link"><a class="nav__link" href="elections.html" target="_blank" rel="noopener noreferrer">know Us</a></li>
+      <!-- <li class="nav__linkholder__link"><a class="nav__link" href="">Mentors</a></li> -->
+      <li class="nav__linkholder__link"><a class="nav__link" href="./contact.html">Contact</a></li>
+    </ul>
+    <img src="media/bernie.gif" id="join-img">
+    <img src="media/party.gif" id="events-img">
+    <img src="media/shop.gif" id="shop-img">
+    <img src="media/phone.gif" id="contact-img">
+    <script>
+      // join hover
+      $('.overlay ul li:nth-child(1)').hover(
+        function(){
+          $('#join-img').addClass('visible');
+      }, function(){
+        $('#join-img').removeClass('visible');
+      });
+
+      // events hover
+      $('.overlay ul li:nth-child(2)').hover(
+        function(){
+          $('#events-img').addClass('visible');
+      }, function(){
+        $('#events-img').removeClass('visible');
+      });
+
+      // shop hover
+      $('.overlay ul li:nth-child(3)').hover(
+        function(){
+          $('#shop-img').addClass('visible');
+      }, function(){
+        $('#shop-img').removeClass('visible');
+      });
+
+      // contact hover
+      $('.overlay ul li:nth-child(4)').hover(
+        function(){
+          $('#contact-img').addClass('visible');
+      }, function(){
+        $('#contact-img').removeClass('visible');
+      });
+
+      //shy nav bar
+      /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.querySelector(".nav").style.top = "0";
+        } else {
+          document.querySelector(".nav").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+    </div>
+    </div>
+
+</div>
