@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NMC</title>
+    <link rel = "stylesheet" type = "text/css" href = "../css/reset.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../css/nav.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../css/light-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../css/article.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  </head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+
+  <style>
+    body {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/pixelated1.png'), auto !important;}
+    a, button, #mascot, #image-carousel, #sticker-hero, #nav, .merch-card  {cursor: url('https://raw.githubusercontent.com/coob113/fancy-cursors/master/pixelated2.png') 23 0, auto !important;}
+    </style>
+  <body data-scroll-container>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<article>
+    <div class="banner-wrapper mbm">
+        <div class="banner" id="rebrand">
+
+        </div>
+    </div>
+
+    <h4 class="fit mbs">What makes a community?</h4>
+    <p class="fit mbm">New Media Club is a student run organization at RIT, and often serves as the beating heart of our New Media community. The club works to connect students throughout their college experience, alumni, and professors outside of a classroom setting. 
+        The mentorship program is also an integral part of the club experience, helping to bolster relationships, make unlikely friends, and instill confidence throughout the community. 
+        The organization has been passed down from generation to generation within the school, and as design evolves, so does the club.
+    </p>
+    <figure class="visual-block mbm">
+        <img src="../img/rebrand-showcase.png">
+    </figure>
+
+    <h4 class="fit mbs">The Challenge</h4>
+    <p class="fit mbm">The world of design is constantly changing, and our diverse community reflects these constant evolutions. 
+        As the 2020 Elected Board members, we worked to bring the spirit of new media to the forefront of our new branding, highlighting creativity, interaction, and the history of design that brought us to where we are now. 
+    </p>
+
+    <figure class="fit mbm">
+        <img class="fit" src="../img/nmc-goals.png">
+    </figure>
+
+    <h4 class="fit mbs">A Playful Perspective</h4>
+    <p class="fit mbm">As we worked to build our new vision for New Media Club, interactions came to define many of our design decisions. 
+        Creating a brand that was able to capture the playful, spirited, and colorful nature of our community was our primary goal. 
+        We created the new homepage with this in mind, filling each section with something that allowed visitors to explore these facets of New Media Club. 
+    </p>
+
+    <figure class="visual-block mbm">
+        <div id="slider-container">
+            <div class="slider">
+                <span><div class="img-container"><img src="../media/drawing.gif"></img></div></span>
+                <span><div class="img-container"><img src="../media/wilson.gif"></img></div></span>
+                <span><div class="img-container"><img src="../media/stickers.gif"></img></div></span>
+        </div>
+        <script type="module">
+            import ScrollBooster from '../src/scrollbooster.js';
+
+            new ScrollBooster({
+                viewport: document.querySelector('#slider-container'),
+                content: document.querySelector('.slider'),
+                scrollMode: 'transform', // use CSS 'transform' property
+                direction: 'horizontal', // allow only horizontal scrolling
+                emulateScroll: true, // scroll on wheel events
+            });
+        </script>
+    </figure>
+
+    <h4 class="fit mbs">A New Face</h4>
+    <p class="fit mbm">We worked tirelessly to explore every possible direction for the new New Media Club logo, and ended right where we started.
+     The new symbol for the club embodies everything the club stands for, and represents changing screens, the motion of interaction, and movement towards the future.
+    </p>
+
+    <figure class="fit mbm">
+        <img class="fit" src="../img/logo-showcase.png">
+    </figure>
+</article>
+<!-- Inject footer code -->
+<div id="footer-placeholder"></div>
+
+<script>
+$(function(){
+  $("#footer-placeholder").load("../footer.html");
+});
+</script>

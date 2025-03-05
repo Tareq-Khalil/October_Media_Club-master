@@ -1,0 +1,101 @@
+body{
+    background-color: white;
+}
+
+h4{
+    color: #0a0a0a
+}
+
+p{
+    color: #0A0A0A; 
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        margin: 0 2rem;
+    }
+}
+
+.fit {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 9px;
+    }
+
+    .container {
+        margin: 0 1rem;
+    }
+
+    .fit {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .fit {
+        margin: 0 20px;
+    }
+}
+
+img{
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-wrapper{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    height: 95vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.banner{
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+}
+
+#rebrand{
+    background-image: url(/img/rebrand-header.png);
+    background-position: 50% 50%;
+}
+
+.img-container img{
+    border-radius: 15px;
+}
+
+article{
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width:480px)  {
+    p{
+        font-size: 1.7rem;
+        line-height: 2.9rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    .banner-wrapper{
+        height: 40vh;
+    }
+}

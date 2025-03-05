@@ -1,0 +1,82 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.burger_menu-top {
+    top: 0;
+    width: 24px;
+    height: 1px;
+    background-color: var(--black);
+    margin: 5px 0;
+    transform: translateZ(0);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+.burger_menu.active .burger_menu-top {
+    transform: translateY(0px) translateX(-5px) rotate(45deg);
+}
+
+.burger_menu-bottom {
+    bottom: 0;
+    width: 20px;
+    height: 1px;
+    background-color: var(--black);
+    margin: 5px 0;
+    transform: translateZ(0);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+p {
+    color: var(--black);
+}
+
+.page-title h1{
+    grid-column: 2/6;
+    color: var(--black);
+}
+
+.page-title p{
+    grid-column: 2/6;
+    grid-row: 2;
+    color: var(--black);
+}
+
+.page-title a{
+    color: var(--black);
+}
+
+.eboard-person-container{
+    margin: auto;
+    text-align: center;
+}
+
+.eboard-contact-container .eboard-person-container:nth-of-type(1){
+    grid-column: 1 / 5;
+}
+
+.eboard-contact-container .eboard-person-container:nth-of-type(2){
+    grid-column: 5 / 9;
+}
+
+.eboard-contact-container .eboard-person-container:nth-of-type(3){
+    grid-column: 9 / 13;
+}
+
+.eboard-contact-container .eboard-person-container:nth-of-type(4){
+    grid-column: 3 / 7;
+    grid-row: 2;
+}
+
+.eboard-contact-container .eboard-person-container:nth-of-type(5){
+    grid-column: 6 / 12;
+    grid-row: 2;
+}
+
+.eboard-profilepic{
+    max-width: 10vw;
+}

@@ -1,0 +1,43 @@
+.page-title h1{
+    grid-column: 2/13;
+    color: var(--white);
+}
+
+.page-title p{
+    grid-column: 2/6;
+    grid-row: 2;
+    color: var(--white);
+}
+
+.event-card{
+    grid-column: 1 / 13;
+}
+
+#next-event{
+    grid-row: 1;
+    grid-column: 2 / 3;
+}
+
+.card-box{
+    border: solid var(--white);
+    grid-column: 1/13;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.event-img{
+    grid-column: 2 / 6;
+    grid-row: 2;
+    background-color: blue;
+    /* min-height: 50px;
+    width: 100%;
+    height: 100%; */
+    margin: 5rem 0;
+}
+
+.event-info-wrapper{
+    grid-column: 6 / 13;
+    grid-row: 2;
+    margin: 5rem 5rem;
+}

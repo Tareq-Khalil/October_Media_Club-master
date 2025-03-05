@@ -1,0 +1,102 @@
+.footer{
+    color: var(--black) !important;
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+.footer-logo {
+    grid-row: 1;
+    font-family: 'terminal-grotesque-open', sans-serif;
+    font-size: 5rem;
+    color: var(--black);
+    grid-column: 2 / half;
+}
+
+.logo-label {
+    font-size: .8rem;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    grid-column: 2 / half;
+    padding-bottom: 2rem;
+    grid-row: 2;
+}
+
+.list-title {
+    font-size: .8rem;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 400;
+    color: var(--gray04);
+    margin-bottom: 1vw;
+}
+
+.footer-linkholder a {
+    font-size: .8rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.signup-container {
+    margin-top: 5vh;
+    grid-column: 2 / half;
+    grid-row: 2;
+    color: var(--black);
+}
+
+.getinvolved-container {
+    margin-top: 5vh;
+    grid-row: 1 / 2;
+    grid-column: 8 / 9;
+    justify-content: center;
+    color: var(--black);
+}
+
+.aboutus-container {
+    margin-top: 5vh;
+    grid-row: 1 / 2;
+    grid-column: 10 / end;
+    color: var(--black);
+}
+
+.sign-up,
+.deets {
+    color: var(--black);
+    font-family: 'IBM Plex Sans', sans-serif;
+    grid-column: 2/8;
+    margin-bottom: 12px;
+
+}
+
+.deets {
+    font-size: .8rem;
+    grid-row: 4;
+}
+
+#mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: row;
+}
+
+#mce-EMAIL {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--black);
+    border-style: solid;
+    max-width: 300px;
+    height: 5vh;
+    width: 20vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--black);
+}
+
+#mc-embedded-subscribe {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--black);
+    border-style: solid;
+    color: var(--black);
+    height: 5vh;
+    width: 3vw;
+    margin: 0;
+    padding: 0;
+}
